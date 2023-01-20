@@ -427,6 +427,9 @@ nav .fa-solid{
         left:25px;
         cursor: pointer;
     }
+        nav ul li a{
+        color: #fff;
+    }
 
     .sub-title{
         font-size: 40px;
