@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthik - Personal portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <style> @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900'); </style>
+        <script src="https://kit.fontawesome.com/9996b85779.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="header-image"></div>
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="logo.png">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Front-end Developer</p>
+                <h1>Hi, I'm <span>Karthik</span><br> from <a href="https://www.incredibleindia.org/content/incredible-india-v2/en/destinations/states/kerala.html" target="_blank"> Kerala, India</a> </h1> 
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------about------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Experienced in design and development of user interfaces for websites and web applications. 
+                        Strong understanding of HTML, CSS, and JavaScript, as well as experience with front-end frameworks and libraries like Angular and React.
+                        Create responsive and interactive user interfaces that are optimised for performance and accessibility. 
+                        Experience with cross-browser compatibility and familiar with web design principles and best practices. 
+                        Work well in team and communicate effectively with designers, developers, testers, and stakeholders.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                        <p class="tab-links" onclick="opentab('education')" >Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>FE Technologies</span> <br> 
+                                HTML &nbsp;&nbsp; CSS <br>
+                                JavaScript <br>
+                                Frameworks and Libraries <br>
+                                APIs <br>
+                                Responsive Design<br>
+                                Version Control and Git <br>
+                                Testing and Debugging <br>
+                                Cross-Browser Development <br>
+                                Devops<br>
+
+                            </li>
+                            <!-- <li><span>App Developer</span> <br> Desiging Web/App Interfaces</li>
+                            <li><span>UI/UX</span> <br> Desiging Web/App Interfaces</li> -->
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current </span> <br> Allianz Technology</li>
+                            <li><span>2017-2022</span> <br> RM Education Solutions India Pvt Ltd</li>
+                            <!-- <li><span>Test</span> <br> Test/Test</li>
+                            <li><span>Test</span> <br> Test/Test</li> -->
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Master of Computer Application</span> <br> 2015 - Visvesvaraya Technological University, <br> Bengaluru India</li>
+                            <li><span>BSc Physics</span> <br> 2012 - University of Kerala <br> Kerala India</li>
+                            <!-- <li><span>Test</span> <br> Test/test/test</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------------------------services------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Designing and Development</h2>
+                    <p> Optimizing the user experience.<br>
+                        Bring concepts to life. <br>
+                        Developing and maintaining the user interface.<br>
+                        Managing software workflow.<br>
+                        Following SEO best practices.<br>
+                        Fixing bugs and testing for usability.</p>
+                    <a href="#contact">More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Devops</h2>
+                    <p> Building & setting up new development tools for new projects.<br>
+                        Working on ways to automate, improve development and release processes.<br>
+                        Testing & examining code written by others and analysing results.<br>
+                        Identifying technical problems and developing software updates and fixes.<br>
+                    <a href="#contact">More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-upload"></i>
+                    <h2>Test, Deployment & Releases</h2>
+                    <p> Dev testing - eliminate as many defects as possible - early in the lifecyce.
+                        Helps teams develop and release code simultaneously <br>
+                        Deployment - Deploy the app to different env based on the business/client requiremets.<br>
+                        Releases - Based on release, Document and store it on cloud storage
+                    </p>
+                    <a href="#contact">More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------------------------portfolio------------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work1.png">
+                    
+                    <div class="layer">
+                        <h3>Online App Clone - Amazon</h3>
+                        <p> Building an amazon clone in Angular and Google's Firebase<br>
+                            Code in Github private folder.</p>
+                            <a href="#contact"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work2.png">
+                    <div class="layer">
+                        <h3>Streaming App Clone - Netflix</h3>
+                        <p> Movies website using angular | netflix clone app.<nr></nr>
+                            Code in Github private folder.</p>
+                            <a href="#contact"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work3.png">
+                    <div class="layer">
+                        <h3>Facebook App Clone</h3>
+                        <p> create a clone of Facebook just to learn using Angular and Firebase as backend to store messages.<br>
+                            Inprogress - Code in Github private folder.</p>
+                            <a href="#contact"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <!-- -------------------------------contact-------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i><a class="email-id" href="mailto:karthiknr14@gmail.com">karthiknr14@gmail.com</a></p>
+                    <p><i class="fa-solid fa-square-phone"></i><a class="mobile-no" href="tel:+918891904838">+91 8891904838</a></p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/karthiknr14"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Karthik-CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder=" Your Email" required>
+                        <textarea style="resize: none" name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class= "btn btn2"type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &#169; Karthik N R <i class="fa-solid fa-handshake"></i>  personal portfolio project </p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tabLinks=document.getElementsByClassName("tab-links");
+        var tabContents=document.getElementsByClassName("tab-contents");
+        function opentab(tabName){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove('active-link');
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove('active-tab');
+            }
+
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+    </script>
+
+    <script>
+        var sideMenu = document.getElementById("sidemenu");
+
+        function openMenu(){
+            sideMenu.style.right="0";
+        }
+        function closeMenu(){
+            sideMenu.style.right="-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxFYvgT3z_vgMcTI-Ai2zxeA4z_DWm0l3iXWgWnPJjbSX6JGZHKYNGhDs3YIstsB_EarQ/exec';
+    const form = document.forms['submit-to-google-sheet'];
+
+    const msg=document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout( function(){
+                msg.innerHTML = "";
+            },5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
